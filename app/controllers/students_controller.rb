@@ -4,6 +4,7 @@ class StudentsController < ApplicationController
   end
 
   def create
+    binding.pry
     @student = Student.new(student_params)
     if @student.save
       redirect_to @student
